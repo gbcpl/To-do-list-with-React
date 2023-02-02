@@ -17,7 +17,7 @@ const App = () => {
   
   return (
     <div className="App">
-      <h2>Hello world!</h2>
+      <h2>To-do-list</h2>
       <input value={inputValue} placeholder='Ajouter un item' type='text' onChange={(event) => setInputValue(event.target.value)}></input>
       <button type="submit" onClick={handleAddButtonClick}>Ajouter</button>
       <ul>
