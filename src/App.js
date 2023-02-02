@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const arrItems = ["Faire les courses", "Faire la vaisselle", "Passer l'aspirateur"]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Hello world!</h2>
+      <input placeholder='Ajouter un item' type='text'></input>
+      <button type="submit">Ajouter</button>
+      <ul>
+        {arrItems.map(e => {
+          return <li>{e}<button>X</button></li>
+        })}
+      </ul>
     </div>
   );
 }
