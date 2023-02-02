@@ -15,11 +15,6 @@ const App = () => {
     setInputValue('');
   };
   
-  /* function handleChange(event) {
-    textContent = event.target.value;
-  }
-  */
-
   return (
     <div className="App">
       <h2>Hello world!</h2>
